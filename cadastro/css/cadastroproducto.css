@@ -1,40 +1,35 @@
 body {
-  height: 100%;
-  background: url('../images/Pague%20leve.png') rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: rgb(255, 255, 255);
   font: 400 0.813em/1.38 'Open Sans';
   color: rgb(0, 0, 0);
 }
 
 .cadastroproducto {
   float: left;
-}
-
-.container {
-  position: relative;
-  float: left;
-  z-index: 1;
-  width: 20%;
-  height: 49px;
-  margin: 353px 0 0 27.66667%;
-}
-
-.container .cadastroproducto {
-  width: 319.8237885462%;
-  height: 627px;
-  margin: -331px 0 0 -44.92839%;
+  width: 42.3333333333%;
+  height: 505px;
+  margin: 150px 0 0 28.83073%;
+  border-radius: 15px;
   background-color: rgba(240, 205, 101, 0.48);
+}
+
+.element {
+  float: left;
+  width: 100%;
+  height: 800px;
+  background: url('../images/Pague%20leve.png') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
 }
 
 .text {
   float: left;
-  width: 86.2745098039%;
+  width: 100%;
   min-height: 63px;
-  margin-left: 13.72209%;
+  margin: 42px 0 0 -0.07382%;
   font-size: 2.462em;
-  line-height: 2.5;
+  line-height: 2;
+  text-align: center;
   color: rgb(11, 62, 174);
 }
 
@@ -42,14 +37,13 @@ body {
   display: block;
   float: left;
   clear: both;
-  width: 39.5663126361%;
+  width: 28.5433070866%;
   height: 52px;
-  margin: 107px 0 0 34.1265%;
+  margin: 45px 0 0 35.82985%;
   border-radius: 5px;
   background-color: rgb(204, 21, 0);
   font-style: italic;
   font-size: 1.846em;
-  font-weight: 600;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -58,8 +52,10 @@ body {
   display: block;
   float: left;
   clear: both;
-  width: 99.7855392156%;
+  width: 64.1732283464%;
+  margin-left: 17.91339%;
   padding: 0 10px;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   font-family: Helvetica;
@@ -72,9 +68,9 @@ body {
   display: block;
   float: left;
   clear: both;
-  width: 99.7855392156%;
+  width: 64.1732283464%;
   height: 42px;
-  margin-top: 25px;
+  margin: 26px 0 0 17.91339%;
   padding-left: 10px;
   border: 1px solid rgb(119, 119, 119);
   border-radius: 3px;
@@ -86,18 +82,9 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.cadastroproducto-2 {
-  position: relative;
-  clear: both;
-  z-index: 8;
-  width: 38.25%;
-  height: 498px;
-  margin: -333px 0 0 32.25%;
-}
-
 .cadastroproducto ._input-1 {
   height: 33px;
-  margin-top: 36px;
+  margin-top: 30px;
 }
 
 .cadastroproducto ._input-2 {
@@ -107,5 +94,5 @@ body {
 
 .cadastroproducto ._input-3 {
   height: 37px;
-  margin-top: 27px;
+  margin-top: 26px;
 }
