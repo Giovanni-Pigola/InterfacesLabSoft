@@ -21,7 +21,7 @@ body {
   z-index: 2;
   width: 52.8333333333%;
   height: 612px;
-  margin: -677px 0 0 23.58203%;
+  margin: -677px 0 0 23.58073%;
   background-color: rgba(240, 205, 101, 0.48);
 }
 
@@ -57,9 +57,9 @@ body {
   position: relative;
   float: left;
   z-index: 8;
-  width: 10.5333333333%;
   height: 37px;
-  margin: -142px 0 0 60.16667%;
+  margin: -151px 0 0 59.46615%;
+  padding: 5px;
   border-radius: 3px;
   background-color: rgb(222, 222, 222);
   font-size: 1em;
@@ -141,8 +141,8 @@ body {
     z-index: 9;
     width: 16.5%;
     height: 101px;
-    margin-top: -595px;
-    margin-left: 42.39844%;
+    margin-top: -623px;
+    margin-left: 41.44792%;
   }
 
   .text {
@@ -152,9 +152,10 @@ body {
   ._button {
     position: relative;
     z-index: 8;
-    width: 11.6666666666%;
+    height: auto;
     margin-top: -210px;
-    margin-left: 60.39844%;
+    margin-left: 58.83073%;
+    font-weight: 700;
   }
 
   ._button:hover {
