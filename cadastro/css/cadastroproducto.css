@@ -1,0 +1,111 @@
+body {
+  height: 100%;
+  background: url('../images/Pague%20leve.png') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font: 400 0.813em/1.38 'Open Sans';
+  color: rgb(0, 0, 0);
+}
+
+.cadastroproducto {
+  float: left;
+}
+
+.container {
+  position: relative;
+  float: left;
+  z-index: 1;
+  width: 20%;
+  height: 49px;
+  margin: 353px 0 0 27.66667%;
+}
+
+.container .cadastroproducto {
+  width: 319.8237885462%;
+  height: 627px;
+  margin: -331px 0 0 -44.92839%;
+  background-color: rgba(240, 205, 101, 0.48);
+}
+
+.text {
+  float: left;
+  width: 86.2745098039%;
+  min-height: 63px;
+  margin-left: 13.72209%;
+  font-size: 2.462em;
+  line-height: 2.5;
+  color: rgb(11, 62, 174);
+}
+
+._button {
+  display: block;
+  float: left;
+  clear: both;
+  width: 39.5663126361%;
+  height: 52px;
+  margin: 107px 0 0 34.1265%;
+  border-radius: 5px;
+  background-color: rgb(204, 21, 0);
+  font-style: italic;
+  font-size: 1.846em;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+._input {
+  display: block;
+  float: left;
+  clear: both;
+  width: 99.7855392156%;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 0.923em;
+  color: rgb(0, 0, 0);
+}
+
+._select {
+  display: block;
+  float: left;
+  clear: both;
+  width: 99.7855392156%;
+  height: 42px;
+  margin-top: 25px;
+  padding-left: 10px;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 3px;
+  background: url('../images/select-arrows.svg') rgb(242, 242, 242);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: right center;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.cadastroproducto-2 {
+  position: relative;
+  clear: both;
+  z-index: 8;
+  width: 38.25%;
+  height: 498px;
+  margin: -333px 0 0 32.25%;
+}
+
+.cadastroproducto ._input-1 {
+  height: 33px;
+  margin-top: 36px;
+}
+
+.cadastroproducto ._input-2 {
+  height: 33px;
+  margin-top: 26px;
+}
+
+.cadastroproducto ._input-3 {
+  height: 37px;
+  margin-top: 27px;
+}

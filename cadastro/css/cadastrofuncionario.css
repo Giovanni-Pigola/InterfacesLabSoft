@@ -1,0 +1,193 @@
+body {
+  height: 100%;
+  background: url('../images/Pague%20leve.png') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font: 400 0.813em/1.38 'Open Sans';
+  color: rgb(0, 0, 0);
+}
+
+.cadastrofuncionario {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 18;
+  width: 52.8346354166%;
+  height: 770px;
+  margin: -834px 0 0 25.25%;
+}
+
+.element {
+  position: relative;
+  float: left;
+  z-index: 0;
+  width: 68.6666666666%;
+  height: 856px;
+  margin: 91px 0 0 16.83073%;
+  background-color: rgba(240, 205, 101, 0.48);
+}
+
+.text {
+  float: left;
+  width: 99.842519685%;
+  min-height: 50px;
+  font-size: 2.462em;
+  line-height: 2.5;
+  text-align: center;
+  color: rgb(11, 62, 174);
+}
+
+._button {
+  display: block;
+  float: left;
+  clear: both;
+  width: 28.6614173228%;
+  height: 52px;
+  margin: 47px 0 0 36.37795%;
+  border-radius: 5px;
+  background-color: rgb(204, 21, 0);
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 1.846em;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+._input {
+  display: block;
+  float: left;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 0.923em;
+  color: rgb(0, 0, 0);
+}
+
+._select {
+  display: block;
+  float: left;
+  height: 38px;
+  padding-left: 10px;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 3px;
+  background: url('../images/select-arrows.svg') rgb(242, 242, 242);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: right center;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.cadastrofuncionario ._select {
+  clear: both;
+  width: 70.2362204724%;
+  margin: 22px 0 0 28.65404%;
+}
+
+._input-11 {
+  position: relative;
+  z-index: 1;
+  width: 10%;
+  height: 33px;
+  margin: -434px 0 0 29%;
+}
+
+._input-12 {
+  position: relative;
+  z-index: 2;
+  width: 10%;
+  height: 33px;
+  margin: -375px 0 0 29%;
+}
+
+._input-13 {
+  position: relative;
+  z-index: 4;
+  width: 23.5%;
+  height: 37px;
+  margin: -256px 0 0 29%;
+}
+
+._select-2 {
+  position: relative;
+  z-index: 3;
+  width: 12.4166666666%;
+  margin: -320px 0 0 28.9987%;
+}
+
+.cadastrofuncionario ._input-1 {
+  clear: both;
+  width: 98.8976377952%;
+  height: 35px;
+  margin: 14px 0 0 -0.00246%;
+}
+
+.cadastrofuncionario ._input-10 {
+  clear: both;
+  width: 98.8976377952%;
+  height: 42px;
+  margin-top: 18px;
+}
+
+.cadastrofuncionario ._input-2 {
+  clear: both;
+  width: 98.8976377952%;
+  height: 34px;
+  margin-top: 22px;
+}
+
+.cadastrofuncionario ._input-3 {
+  position: relative;
+  clear: both;
+  z-index: 11;
+  width: 49.7637795275%;
+  height: 35px;
+  margin-top: 20px;
+}
+
+.cadastrofuncionario ._input-4 {
+  position: relative;
+  z-index: 10;
+  width: 40.7874015748%;
+  height: 35px;
+  margin: 20px 0 0 9.29134%;
+}
+
+.cadastrofuncionario ._input-5 {
+  clear: both;
+  width: 99.842519685%;
+  height: 38px;
+  margin-top: 26px;
+}
+
+.cadastrofuncionario ._input-6 {
+  clear: both;
+  width: 99.842519685%;
+  height: 35px;
+  margin-top: 24px;
+}
+
+.cadastrofuncionario ._input-7 {
+  clear: both;
+  width: 77.0078740157%;
+  height: 33px;
+  margin: 33px 0 0 22.83219%;
+}
+
+.cadastrofuncionario ._input-8 {
+  clear: both;
+  width: 75.905511811%;
+  height: 33px;
+  margin: 26px 0 0 22.83219%;
+}
+
+.cadastrofuncionario ._input-9 {
+  clear: both;
+  width: 44.8818897637%;
+  height: 37px;
+  margin: 26px 0 0 54.01329%;
+}
