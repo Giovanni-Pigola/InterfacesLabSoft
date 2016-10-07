@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 0.813em/1.38 'Open Sans';
+  color: rgb(0, 0, 0);
+}
+
+.cadastroproducto {
+  float: left;
+  width: 42.3333333333%;
+  height: 505px;
+  margin: 150px 0 0 28.83073%;
+  border-radius: 15px;
+  background-color: rgba(240, 205, 101, 0.48);
+}
+
+.element {
+  float: left;
+  width: 100%;
+  height: 800px;
+  background: url('../images/Pague%20leve.png') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.text {
+  float: left;
+  width: 100%;
+  min-height: 63px;
+  margin: 42px 0 0 -0.07382%;
+  font-size: 2.462em;
+  line-height: 2;
+  text-align: center;
+  color: rgb(11, 62, 174);
+}
+
+._button {
+  display: block;
+  float: left;
+  clear: both;
+  width: 28.5433070866%;
+  height: 52px;
+  margin: 45px 0 0 35.82985%;
+  border-radius: 5px;
+  background-color: rgb(204, 21, 0);
+  font-style: italic;
+  font-size: 1.846em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+._input {
+  display: block;
+  float: left;
+  clear: both;
+  width: 64.1732283464%;
+  margin-left: 17.91339%;
+  padding: 0 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 0.923em;
+  color: rgb(0, 0, 0);
+}
+
+._select {
+  display: block;
+  float: left;
+  clear: both;
+  width: 64.1732283464%;
+  height: 42px;
+  margin: 26px 0 0 17.91339%;
+  padding-left: 10px;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 3px;
+  background: url('../images/select-arrows.svg') rgb(242, 242, 242);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: right center;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.cadastroproducto ._input-1 {
+  height: 33px;
+  margin-top: 30px;
+}
+
+.cadastroproducto ._input-2 {
+  height: 33px;
+  margin-top: 26px;
+}
+
+.cadastroproducto ._input-3 {
+  height: 37px;
+  margin-top: 26px;
+}
