@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 700 1em/1.38 Helvetica;
+  color: rgb(255, 255, 255);
+}
+
+.background {
+  float: left;
+  width: 100%;
+  height: 712px;
+  background: url('../images/Pague%20leve.png') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  float: left;
+  width: 100%;
+}
+
+.footer {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(11, 62, 174);
+}
+
+.text {
+  float: left;
+  width: 42.4166666666%;
+  min-height: 50px;
+  border-radius: 5px;
+  background-color: rgb(11, 62, 174);
+  font-size: 1.875em;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(240, 205, 101);
+}
+
+._button {
+  display: block;
+  float: left;
+  height: 31px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgb(11, 62, 174);
+  font-style: italic;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+._button:hover {
+  color: rgb(240, 205, 101);
+}
+
+.container-1 {
+  height: 50px;
+  background-color: rgb(11, 62, 174);
+}
+
+.container-2 {
+  clear: both;
+  height: 742px;
+}
+
+.container ._button-1 {
+  width: 6.5625%;
+  margin-left: 17.00521%;
+}
+
+.container ._button-2 {
+  width: 6.4583333333%;
+  margin-left: 1.9362%;
+}
+
+.container ._button-3 {
+  width: 6.5625%;
+  margin-left: 2.03125%;
+}
+
+.container ._button-4 {
+  width: 15%;
+  margin-left: 1.9375%;
+}
