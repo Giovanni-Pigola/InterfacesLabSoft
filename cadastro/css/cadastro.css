@@ -1,13 +1,14 @@
 body {
   background-color: rgb(255, 255, 255);
-  font: 700 1em/1.38 Helvetica;
-  color: rgb(255, 255, 255);
+  font: 400 2em/2.5 'Open Sans';
+  color: rgb(11, 62, 174);
 }
 
 .background {
   float: left;
   width: 100%;
   height: 712px;
+  border: 1px double rgb(0, 0, 0);
   background: url('../images/Pague%20leve.png') rgb(255, 255, 255);
   background-size: cover;
   background-position: center center;
@@ -17,43 +18,40 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 17;
+  z-index: 10;
   width: 52.8333333333%;
   height: 541px;
-  margin: -649px 0 0 23.58073%;
+  margin: -637px 0 0 23.59896%;
   background-color: rgba(240, 205, 101, 0.48);
 }
 
-.cadastro .text {
-  width: 100%;
-  font: 400 2em/2.5 'Open Sans';
-  color: rgb(11, 62, 174);
-}
-
 .container {
+  position: relative;
   float: left;
+  z-index: 1;
   width: 100%;
-}
-
-.footer {
-  float: left;
-  clear: both;
-  width: 100%;
-  height: 30px;
-  background-color: rgb(11, 62, 174);
+  height: 712px;
 }
 
 .text {
   float: left;
+  width: 100%;
   min-height: 50px;
+  font-size: 1em;
   text-align: center;
+  color: rgb(11, 62, 174);
 }
 
 ._button {
   display: block;
   float: left;
+  clear: both;
+  width: 28.7066246056%;
+  height: 52px;
+  margin: 40px 0 0 35.65162%;
   border-radius: 5px;
-  font-style: italic;
+  background-color: rgb(204, 21, 0);
+  font: italic 700 0.75em/1.38 Helvetica;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -67,51 +65,8 @@ body {
   padding: 0 10px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  font-style: italic;
-  font-size: 0.75em;
-  font-weight: 400;
+  font: italic 0.375em/1.38 Helvetica;
   color: rgb(0, 0, 0);
-}
-
-._text {
-  width: 42.4166666666%;
-  border-radius: 5px;
-  background-color: rgb(11, 62, 174);
-  font-size: 1.875em;
-  line-height: 1.5;
-  color: rgb(240, 205, 101);
-}
-
-.cadastro ._button {
-  clear: both;
-  width: 28.7066246056%;
-  height: 52px;
-  margin: 40px 0 0 35.65162%;
-  background-color: rgb(204, 21, 0);
-  font-size: 1.5em;
-}
-
-.container ._button {
-  height: 31px;
-  margin-top: 10px;
-  background-color: rgb(11, 62, 174);
-  font-size: 1em;
-}
-
-.container ._button:hover {
-  color: rgb(240, 205, 101);
-}
-
-.container-1 {
-  height: 50px;
-  background-color: rgb(11, 62, 174);
-}
-
-.container-2 {
-  position: relative;
-  clear: both;
-  z-index: 8;
-  height: 742px;
 }
 
 .cadastro ._input-1 {
@@ -132,22 +87,16 @@ body {
   margin: 28px 0 0 9.87776%;
 }
 
-.container ._button-1 {
-  width: 6.5625%;
-  margin-left: 17.00521%;
-}
+@media(max-width: 600px) {
+  .cadastro {
+    position: relative;
+    z-index: 10;
+    margin-top: -640px;
+  }
 
-.container ._button-2 {
-  width: 6.4583333333%;
-  margin-left: 1.9362%;
-}
-
-.container ._button-3 {
-  width: 6.5625%;
-  margin-left: 2.03125%;
-}
-
-.container ._button-4 {
-  width: 15%;
-  margin-left: 1.9375%;
+  .container {
+    position: relative;
+    z-index: 1;
+    height: 711px;
+  }
 }
