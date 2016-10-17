@@ -1,11 +1,13 @@
 # InterfacesLabSoft
 
-Styleguide
+Style guide
 
 Cores:
+
 	Azul
 		Barra Principal: 11, 62, 174
 		Botão: 62, 113, 255
+		Botão (on hover): 11, 62, 174
 		Detalhes: 113, 164, 255
 		Fundo de forms: 113, 164, 255, 0.2
 	
@@ -18,9 +20,11 @@ Cores:
 	
 	Verde:
 		Botão: 67, 212, 87
+		Botão (on hover): 16, 161, 36
 	
 	Vermelho:
 		Botão: 204, 21, 0
+		Botão (on hover): 179, 0, 0
 		
 	Preto:
 		Letra em fundo branco (Primario): 0, 0, 0, 0.87
@@ -40,6 +44,7 @@ Cores:
 		Divisores: 255, 255, 255, 0.12
 
 Caixas de texto:
+
 	Letra: Open Sans
 	Posição: Centralizado
 	Arredondamento de borda: 10px
@@ -47,8 +52,15 @@ Caixas de texto:
 	Cor de borda: vide cores
 
 Botão:
+
 	Arredondamento de borda: 10px
 	Borda: nenhuma
+	Letra:
+		Weight: 600
+		Estilo: Italico
+		Cor:
+			Normal: vide Branco
+			Hover: vide amarelo (quando necessário)
 	Cor:
 		Ação neutra: vide azul
 		Ação de confirmação de usuário: vide verde
