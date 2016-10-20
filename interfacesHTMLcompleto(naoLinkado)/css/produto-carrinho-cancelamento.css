@@ -1,0 +1,347 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 300 1em/1.38 'Open Sans';
+  color: rgb(0, 0, 0);
+}
+
+.background {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 700px;
+  background-image: url('../images/Pague%20leve.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.cadastro {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  width: 52.8333333333%;
+  height: 541px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgba(113, 164, 255, 0.2);
+}
+
+.confirmar {
+  display: block;
+  position: relative;
+  float: left;
+  width: 28.7066246056%;
+  height: 52px;
+  margin-top: 26px;
+  border-radius: 5px;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.element {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 6;
+  width: 38.643533123%;
+  height: 235px;
+  margin: 36px 0 0 9.93691%;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 15px;
+  background: url('../images/prod1.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.text {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 50px;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 2.5;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.textmarcaproduto {
+  position: relative;
+  float: left;
+  z-index: 3;
+  width: 38.3280757097%;
+  height: 46px;
+  margin: 37px 0 0 3.06339%;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.textnomeproduto {
+  float: left;
+  width: 79.9684542586%;
+  height: 59px;
+  margin: 113px 0 0 9.93691%;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.textocategoriaproduto {
+  position: relative;
+  float: left;
+  z-index: 5;
+  width: 38.3280757097%;
+  height: 37px;
+  margin: -37px 0 0 51.8631699999%;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.textoprecoproduto {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 4;
+  width: 38.4858044164%;
+  height: 64px;
+  margin: -155px 0 0 51.64383%;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.confirmar-1 {
+  z-index: 0;
+  margin-left: 9.87037%;
+  background-color: rgb(62, 113, 255);
+}
+
+.confirmar-1:hover {
+  background-color: rgb(11, 62, 174);
+}
+
+.confirmar-2 {
+  z-index: 7;
+  margin-left: 22.77455%;
+  background-color: rgb(204, 21, 0);
+}
+
+.confirmar-2:hover {
+  background-color: rgb(179, 0, 0);
+}
+
+@media(max-width: 770px) {
+  .background .cadastro {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 66.5%;
+    margin: auto;
+  }
+
+  .cadastro .confirmar {
+    position: absolute;
+    float: none;
+    width: 32%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .cadastro .element {
+    position: absolute;
+    float: none;
+    clear: none;
+    left: 9.9362421262%;
+    width: 38.6426486403%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .cadastro .text {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+  }
+
+  .cadastro .textmarcaproduto {
+    position: absolute;
+    float: none;
+    left: 51.640036872%;
+    width: 38.3277001075%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .cadastro .textnomeproduto {
+    position: absolute;
+    float: none;
+    top: 113px;
+    left: 0;
+    right: 0;
+    width: 79.9662006452%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cadastro .textocategoriaproduto {
+    position: absolute;
+    float: none;
+    top: 389px;
+    left: 51.640036872%;
+    width: 38.3277001075%;
+    height: 54px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .cadastro .textoprecoproduto {
+    position: absolute;
+    float: none;
+    clear: none;
+    left: 51.640036872%;
+    width: 38.4851743739%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .cadastro .confirmar-1 {
+    left: 9.8671070825%;
+  }
+
+  .cadastro .confirmar-2 {
+    left: 58.1285911814%;
+  }
+}
+
+@media(max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+
+  .background .cadastro {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .cadastro .confirmar {
+    width: 38%;
+  }
+
+  .cadastro .text,
+  .cadastro .textnomeproduto {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cadastro .confirmar-1 {
+    left: 2.4999999999%;
+  }
+
+  .cadastro .confirmar-2 {
+    left: 59.7289156626%;
+  }
+}
+
+@media(max-width: 475px) {
+  .background .cadastro {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 69.8947368421%;
+    margin: auto;
+  }
+
+  .cadastro .element {
+    left: 2.8614457831%;
+    width: 45.4819277108%;
+  }
+
+  .cadastro .text {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cadastro .textnomeproduto {
+    left: 0;
+    right: 0;
+    width: 94.2771084337%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cadastro .textmarcaproduto,
+  .cadastro .textocategoriaproduto {
+    left: 51.656626506%;
+    width: 45.1807228915%;
+  }
+
+  .cadastro .textoprecoproduto {
+    left: 51.656626506%;
+    width: 45.4819277108%;
+  }
+}
+
+@media(max-width: 380px) {
+  body {
+    font-size: 1em;
+  }
+
+  .background .cadastro {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .cadastro .confirmar {
+    width: 42%;
+  }
+
+  .cadastro .text,
+  .cadastro .textnomeproduto {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cadastro .confirmar-1 {
+    left: 2.8591599011%;
+  }
+
+  .cadastro .confirmar-2 {
+    left: 55.5020590657%;
+  }
+}
