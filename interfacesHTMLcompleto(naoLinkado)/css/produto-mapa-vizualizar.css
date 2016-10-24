@@ -30,10 +30,13 @@ body {
 
 .confirmar {
   display: block;
-  float: left;
+  position: absolute;
+  top: 469px;
+  left: 0;
+  right: 0;
   width: 28.7066246056%;
   height: 52px;
-  margin: 26px 0 0 35.61465%;
+  margin: 0 auto;
   border-radius: 5px;
   background-color: rgb(62, 113, 255);
   font-style: italic;
@@ -48,13 +51,12 @@ body {
 }
 
 .element {
-  position: relative;
-  float: left;
-  clear: both;
+  position: absolute;
+  top: 209px;
+  left: 9.8738170347%;
   z-index: 6;
   width: 38.643533123%;
   height: 235px;
-  margin: 36px 0 0 9.93691%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 15px;
   background: url('../images/prod1.jpg') rgb(222, 222, 222);
@@ -79,12 +81,12 @@ body {
 }
 
 .textmarcaproduto {
-  position: relative;
-  float: left;
+  position: absolute;
+  top: 209px;
+  left: 51.5141955835%;
   z-index: 3;
   width: 38.3280757097%;
   height: 46px;
-  margin: 37px 0 0 3.06339%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -93,10 +95,14 @@ body {
 }
 
 .textnomeproduto {
-  float: left;
+  position: absolute;
+  top: 113px;
+  left: 0;
+  right: 0;
+  z-index: 2;
   width: 79.9684542586%;
   height: 59px;
-  margin: 113px 0 0 9.93691%;
+  margin: 0 auto;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -105,12 +111,12 @@ body {
 }
 
 .textocategoriaproduto {
-  position: relative;
-  float: left;
+  position: absolute;
+  top: 406px;
+  left: 51.7335370662%;
   z-index: 5;
   width: 38.3280757097%;
   height: 37px;
-  margin: -37px 0 0 51.8631699999%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -119,13 +125,12 @@ body {
 }
 
 .textoprecoproduto {
-  position: relative;
-  float: left;
-  clear: both;
+  position: absolute;
+  top: 288px;
+  left: 51.5141955835%;
   z-index: 4;
   width: 38.4858044164%;
   height: 64px;
-  margin: -155px 0 0 51.64383%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -143,46 +148,23 @@ body {
   }
 
   .cadastro .confirmar {
-    clear: both;
-    margin-left: 35.6122299999%;
-  }
-
-  .cadastro .element {
-    position: relative;
-    z-index: 6;
-    margin-left: 9.9285599999%;
-  }
-
-  .cadastro .text {
     left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .cadastro .textmarcaproduto {
-    position: relative;
-    z-index: 3;
-    margin-left: 3.06115%;
-  }
-
+  .cadastro .text,
   .cadastro .textnomeproduto {
-    margin-left: 9.9285599999%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .cadastro .textocategoriaproduto {
-    position: relative;
-    z-index: 5;
     width: 38.3469042863%;
     height: 54px;
-    margin-top: -53px;
-    margin-left: 51.96651%;
-  }
-
-  .cadastro .textoprecoproduto {
-    position: relative;
-    z-index: 4;
-    margin-left: 51.64004%;
   }
 }
 
@@ -201,26 +183,17 @@ body {
   }
 
   .cadastro .confirmar {
-    position: absolute;
-    float: none;
-    clear: none;
     top: 471px;
     left: 0;
     right: 0;
     width: 37.5624742078%;
-    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
   }
 
   .cadastro .element {
-    position: absolute;
-    float: none;
-    clear: none;
     left: 7.9254079254%;
     width: 40.7925407925%;
-    margin-top: 0;
-    margin-left: 0;
   }
 
   .cadastro .text {
@@ -232,43 +205,26 @@ body {
   }
 
   .cadastro .textmarcaproduto {
-    position: absolute;
-    float: none;
     left: 51.5151515151%;
     width: 40.0932400932%;
-    margin-top: 0;
-    margin-left: 0;
   }
 
   .cadastro .textnomeproduto {
-    position: absolute;
-    float: none;
-    top: 113px;
     left: 0;
     right: 0;
     width: 84.1491841491%;
-    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
   }
 
   .cadastro .textocategoriaproduto {
-    position: absolute;
-    float: none;
     top: 390px;
     left: 51.9813519813%;
     width: 40.0932400932%;
-    margin-top: 0;
-    margin-left: 0;
   }
 
   .cadastro .textoprecoproduto {
-    position: absolute;
-    float: none;
-    clear: none;
     left: 51.5151515151%;
     width: 40.3263403263%;
-    margin-top: 0;
-    margin-left: 0;
   }
 }

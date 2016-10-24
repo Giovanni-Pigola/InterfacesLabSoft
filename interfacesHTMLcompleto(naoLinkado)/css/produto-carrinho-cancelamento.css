@@ -20,7 +20,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 8;
+  z-index: 9;
   width: 52.8333333333%;
   height: 541px;
   margin: auto;
@@ -30,11 +30,10 @@ body {
 
 .confirmar {
   display: block;
-  position: relative;
-  float: left;
+  position: absolute;
+  top: 469px;
   width: 28.7066246056%;
   height: 52px;
-  margin-top: 26px;
   border-radius: 5px;
   font-style: italic;
   font-size: 1.5em;
@@ -43,14 +42,25 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  width: 100%;
+  height: 331px;
+  margin: auto;
+}
+
 .element {
-  position: relative;
-  float: left;
-  clear: both;
+  position: absolute;
+  top: 96px;
+  left: 9.8703667192%;
   z-index: 6;
   width: 38.643533123%;
   height: 235px;
-  margin: 36px 0 0 9.93691%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 15px;
   background: url('../images/prod1.jpg') rgb(222, 222, 222);
@@ -60,7 +70,7 @@ body {
 
 .text {
   position: absolute;
-  top: 16px;
+  top: 14px;
   left: 0;
   right: 0;
   z-index: 1;
@@ -75,12 +85,12 @@ body {
 }
 
 .textmarcaproduto {
-  position: relative;
-  float: left;
+  position: absolute;
+  top: 96px;
+  left: 51.5132097791%;
   z-index: 3;
   width: 38.3280757097%;
   height: 46px;
-  margin: 37px 0 0 3.06339%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -89,10 +99,14 @@ body {
 }
 
 .textnomeproduto {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   width: 79.9684542586%;
   height: 59px;
-  margin: 113px 0 0 9.93691%;
+  margin: 0 auto;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -101,12 +115,12 @@ body {
 }
 
 .textocategoriaproduto {
-  position: relative;
-  float: left;
+  position: absolute;
+  top: 293px;
+  left: 51.7325512618%;
   z-index: 5;
   width: 38.3280757097%;
   height: 37px;
-  margin: -37px 0 0 51.8631699999%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -115,13 +129,12 @@ body {
 }
 
 .textoprecoproduto {
-  position: relative;
-  float: left;
-  clear: both;
+  position: absolute;
+  top: 175px;
+  left: 51.5132097791%;
   z-index: 4;
   width: 38.4858044164%;
   height: 64px;
-  margin: -155px 0 0 51.64383%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -130,23 +143,22 @@ body {
 }
 
 .confirmar-1 {
-  z-index: 0;
-  margin-left: 9.87037%;
-  background-color: rgb(62, 113, 255);
-}
-
-.confirmar-1:hover {
-  background-color: rgb(11, 62, 174);
-}
-
-.confirmar-2 {
-  z-index: 7;
-  margin-left: 22.77455%;
+  left: 61.3564668769%;
+  z-index: 8;
   background-color: rgb(204, 21, 0);
 }
 
-.confirmar-2:hover {
+.confirmar-1:hover {
   background-color: rgb(179, 0, 0);
+}
+
+.confirmar-2 {
+  left: 9.8703667192%;
+  background-color: rgb(62, 113, 255);
+}
+
+.confirmar-2:hover {
+  background-color: rgb(11, 62, 174);
 }
 
 @media(max-width: 770px) {
@@ -160,21 +172,16 @@ body {
   }
 
   .cadastro .confirmar {
-    position: absolute;
-    float: none;
     width: 32%;
-    margin-top: 0;
-    margin-left: 0;
   }
 
-  .cadastro .element {
-    position: absolute;
-    float: none;
-    clear: none;
-    left: 9.9362421262%;
-    width: 38.6426486403%;
-    margin-top: 0;
-    margin-left: 0;
+  .cadastro .container {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .cadastro .text {
@@ -185,54 +192,42 @@ body {
     line-height: 1.5;
   }
 
-  .cadastro .textmarcaproduto {
-    position: absolute;
-    float: none;
-    left: 51.640036872%;
-    width: 38.3277001075%;
-    margin-top: 0;
-    margin-left: 0;
+  .container .element {
+    left: 9.9171539961%;
+    width: 38.5690789473%;
   }
 
-  .cadastro .textnomeproduto {
-    position: absolute;
-    float: none;
-    top: 113px;
+  .container .textmarcaproduto {
+    left: 51.5411793372%;
+    width: 38.2553606237%;
+  }
+
+  .container .textnomeproduto {
     left: 0;
     right: 0;
-    width: 79.9662006452%;
-    margin-top: 0;
+    width: 79.8154239766%;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .cadastro .textocategoriaproduto {
-    position: absolute;
-    float: none;
-    top: 389px;
-    left: 51.640036872%;
-    width: 38.3277001075%;
+  .container .textocategoriaproduto {
+    top: 276px;
+    left: 51.5411793372%;
+    width: 38.2553606237%;
     height: 54px;
-    margin-top: 0;
-    margin-left: 0;
   }
 
-  .cadastro .textoprecoproduto {
-    position: absolute;
-    float: none;
-    clear: none;
-    left: 51.640036872%;
-    width: 38.4851743739%;
-    margin-top: 0;
-    margin-left: 0;
+  .container .textoprecoproduto {
+    left: 51.5411793372%;
+    width: 38.410696881%;
   }
 
   .cadastro .confirmar-1 {
-    left: 9.8671070825%;
+    left: 58.1285911814%;
   }
 
   .cadastro .confirmar-2 {
-    left: 58.1285911814%;
+    left: 9.8671070825%;
   }
 }
 
@@ -253,20 +248,50 @@ body {
     width: 38%;
   }
 
-  .cadastro .text,
-  .cadastro .textnomeproduto {
+  .cadastro .container {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .cadastro .text {
     left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto;
   }
 
+  .container .element {
+    left: 9.9349937343%;
+    width: 38.6395676691%;
+  }
+
+  .container .textmarcaproduto,
+  .container .textocategoriaproduto {
+    left: 51.6369047619%;
+    width: 38.3262844611%;
+  }
+
+  .container .textnomeproduto {
+    left: 0;
+    right: 0;
+    width: 79.9655388471%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container .textoprecoproduto {
+    left: 51.6369047619%;
+    width: 38.4829260651%;
+  }
+
   .cadastro .confirmar-1 {
-    left: 2.4999999999%;
+    left: 59.7289156626%;
   }
 
   .cadastro .confirmar-2 {
-    left: 59.7289156626%;
+    left: 2.4999999999%;
   }
 }
 
@@ -280,9 +305,12 @@ body {
     margin: auto;
   }
 
-  .cadastro .element {
-    left: 2.8614457831%;
-    width: 45.4819277108%;
+  .cadastro .container {
+    top: 0;
+    bottom: 0;
+    height: 330px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .cadastro .text {
@@ -292,7 +320,19 @@ body {
     margin-left: auto;
   }
 
-  .cadastro .textnomeproduto {
+  .container .element {
+    top: 95px;
+    left: 2.8567394578%;
+    width: 45.4772213855%;
+  }
+
+  .container .textmarcaproduto,
+  .container .textocategoriaproduto {
+    left: 51.656626506%;
+    width: 45.1760165662%;
+  }
+
+  .container .textnomeproduto {
     left: 0;
     right: 0;
     width: 94.2771084337%;
@@ -300,15 +340,9 @@ body {
     margin-left: auto;
   }
 
-  .cadastro .textmarcaproduto,
-  .cadastro .textocategoriaproduto {
+  .container .textoprecoproduto {
     left: 51.656626506%;
-    width: 45.1807228915%;
-  }
-
-  .cadastro .textoprecoproduto {
-    left: 51.656626506%;
-    width: 45.4819277108%;
+    width: 45.4772213855%;
   }
 }
 
@@ -329,19 +363,49 @@ body {
     width: 42%;
   }
 
-  .cadastro .text,
-  .cadastro .textnomeproduto {
+  .cadastro .container {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .cadastro .text {
     left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto;
   }
 
+  .container .element {
+    left: 2.854793233%;
+    width: 45.4123590225%;
+  }
+
+  .container .textmarcaproduto,
+  .container .textocategoriaproduto {
+    left: 51.5742481203%;
+    width: 45.1069078947%;
+  }
+
+  .container .textnomeproduto {
+    left: 0;
+    right: 0;
+    width: 94.1318139097%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container .textoprecoproduto {
+    left: 51.5742481203%;
+    width: 45.4123590225%;
+  }
+
   .cadastro .confirmar-1 {
-    left: 2.8591599011%;
+    left: 55.5020590657%;
   }
 
   .cadastro .confirmar-2 {
-    left: 55.5020590657%;
+    left: 2.8591599011%;
   }
 }
