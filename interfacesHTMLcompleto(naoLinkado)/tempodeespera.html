@@ -11,10 +11,20 @@
 </head>
 <body class="body page-tempodeespera clearfix">
   <div class="background">
-    <button class="_button">Sair da Fila</button>
+    <button onClick="window.location.href='carrinho.html';" class="_button" type="button">Sair da Fila</button>
     <p class="text text-1">1</p>
     <div class="wrapper"></div>
     <p class="text text-2">Sua posição na fila é:</p>
   </div>
+<script type="text/javascript">
+  function time_out() {
+    setTimeout(update_screen, 15000);
+  }
+  function update_screen(){
+    window.location="chamadaacliente.html";
+  }
+
+  time_out();
+</script>
 </body>
 </html>
