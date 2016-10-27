@@ -10,31 +10,21 @@
   <link rel="stylesheet" href="css/header---footer.css">
 </head>
 <body class="body page-header---footer clearfix">
-  <div class="backgroundnot">
-    <div class="container container-1 clearfix">
-      <div class="background"></div>
-      <div class="wrapper"><iframe src="home.html" style="border:none; height:100%; width:100%;" id="iframe1" ></iframe></div>
-      <footer class="footer"></footer>
-    </div>
-    <div class="container container-2 clearfix">
-      <p class="text">Scan&amp;Skip</p>
-      <div class="container clearfix">
-        <button onClick="mudaFrame('home.html')" class="_button _button-1" type="button">Home</button>
-        <button onClick="mudaFrame('sobre.html')" class="_button _button-2" type="button">Sobre</button>
-        <button onClick="mudaFrame('login.html')" class="_button _button-3" type="button">Login</button>
-        <button onClick="mudaFrame('cadastro.html');" class="_button _button-4" type="button">Cadastre-se</button>
-      </div>
+  <div class="corpo clearfix">
+    <div class="background"></div>
+    <div class="wrapper"><iframe src="home.html" style="border:none; height:100%; width:100%;" ></iframe></div>
+    <footer class="footer"></footer>
+  </div>
+  <div class="barra clearfix">
+    <p class="text">Scan&amp;Skip</p>
+    <div class="botoesbarra clearfix">
+      <button onClick="window.location='home.html';" class="_button _button-1">Home</button>
+      <button onClick="window.location='sobre.html';" class="_button _button-2" type="button">Sobre</button>
+      <button class="_button _button-3">Login</button>
+      <button onClick="window.location='cadastro.html';" class="_button _button-4">Cadastre-se</button>
     </div>
   </div>
 
-  <script src="js/jquery-min.js">
-    
-    function mudaFrame(target){ 
-      
-      var frame = document.getElementById("iframe1");
-      frame.src = target;
-    }
-
-  </script>
+  <script src="js/jquery-min.js"></script>
 </body>
 </html>
