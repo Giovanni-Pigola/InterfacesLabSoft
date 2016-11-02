@@ -218,9 +218,7 @@ body {
   width: 35.7896567717%;
   height: 52px;
   border-radius: 5px;
-  font-style: italic;
-  font-size: 1.5em;
-  line-height: 1.38;
+  font: italic 700 1.5em/1.38 Helvetica;
   color: rgb(255, 255, 255);
 }
 
@@ -245,8 +243,6 @@ body {
   left: 64.0190166975%;
   z-index: 1;
   background-color: rgb(67, 212, 87);
-  font-family: Helvetica;
-  font-weight: 700;
 }
 
 .containerbotoescarrinho ._button-4:hover {
@@ -257,7 +253,6 @@ body {
   top: 0;
   left: -0.1623376624%;
   background-color: rgb(204, 21, 0);
-  font-weight: 600;
 }
 
 .containerbotoescarrinho ._button-5:hover,
@@ -328,6 +323,7 @@ body {
     top: 384px;
     left: 0;
     right: 0;
+    width: 263.0586592178%;
     height: 52px;
     margin-right: auto;
     margin-left: auto;
@@ -428,7 +424,6 @@ body {
 
   .alteraquantidade .quantidade,
   .carrinho .campototalcarrinho,
-  .carrinho .containerbotoescarrinho,
   .infocarrinho .nomeproduto,
   .produtocarrinho .infocarrinho {
     left: 0;
@@ -441,6 +436,14 @@ body {
     left: 0;
     right: 0;
     width: 66.4921465968%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .carrinho .containerbotoescarrinho {
+    left: 0;
+    right: 0;
+    width: 187.1380431217%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -481,7 +484,6 @@ body {
 @media(max-width: 630px) {
   .alteraquantidade .quantidade,
   .carrinho .campototalcarrinho,
-  .carrinho .containerbotoescarrinho,
   .infocarrinho .nomeproduto,
   .produtocarrinho .infocarrinho {
     left: 0;
@@ -494,6 +496,14 @@ body {
     left: 0;
     right: 0;
     width: 73.5729386892%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .carrinho .containerbotoescarrinho {
+    left: 0;
+    right: 0;
+    width: 153.1247886371%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -534,11 +544,18 @@ body {
   .alteraquantidade .quantidade,
   .background .carrinho,
   .carrinho .campototalcarrinho,
-  .carrinho .containerbotoescarrinho,
   .infocarrinho .nomeproduto,
   .produtocarrinho .infocarrinho {
     left: 0;
     right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .carrinho .containerbotoescarrinho {
+    left: 0;
+    right: 0;
+    width: 153.2876204595%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -561,11 +578,18 @@ body {
   .alteraquantidade .quantidade,
   .background .carrinho,
   .carrinho .campototalcarrinho,
-  .carrinho .containerbotoescarrinho,
   .infocarrinho .nomeproduto,
   .produtocarrinho .infocarrinho {
     left: 0;
     right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .carrinho .containerbotoescarrinho {
+    left: 0;
+    right: 0;
+    width: 153.6637931034%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -600,7 +624,6 @@ body {
 
   .alteraquantidade .quantidade,
   .carrinho .campototalcarrinho,
-  .carrinho .containerbotoescarrinho,
   .produtocarrinho .infocarrinho {
     left: 0;
     right: 0;
@@ -612,6 +635,14 @@ body {
     left: 0;
     right: 0;
     width: 80.3921568627%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .carrinho .containerbotoescarrinho {
+    left: 0;
+    right: 0;
+    width: 128.9205411585%;
     margin-right: auto;
     margin-left: auto;
   }
