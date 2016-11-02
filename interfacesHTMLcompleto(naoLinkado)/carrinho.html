@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
   <title>carrinho</title>
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:600,400,700,400" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/carrinho-grid.css">
   <link rel="stylesheet" href="css/carrinho.css">
 </head>
 <body class="body page-carrinho clearfix">
   <div class="background">
-    <div class="carrinho clearfix">
+    <form class="carrinho clearfix">
       <p class="titulocarrinho">Seu carrinho</p>
       <div class="campototalcarrinho">
         <p class="valortotalcarrinho">R$ 37,90</p>
@@ -20,25 +20,10 @@
       <div class="produtocarrinho">
         <div class="infocarrinho">
           <div class="alteraquantidade">
-            <button onClick="alteraquantidade('-')" class="_button _button-1" id="-">-</button>
-            <button onClick="alteraquantidade('+')" class="_button _button-2" id="+">+</button>
-            <p class="quantidade" id="quantidade">1</p>
+            <button class="_button _button-1">-</button>
+            <button class="_button _button-2">+</button>
+            <p class="quantidade">2</p>
           </div>
-          <script>              
-              var quant = document.getElementById("quantidade");
-              var quantVal = Number(quant.innerHTML);
-              var bmenos = document.getElementById("-");
-              var bmais = document.getElementById("+");
-              function alteraquantidade(op) {
-                if (op == "-"){
-                  quantVal -= 1;
-                  quant.innerHTML = quantVal;
-                }
-                if (op == "+"){                  quantVal += 1;
-                  quant.innerHTML = quantVal;
-                }
-              }
-            </script>
           <p class="precoproduto">R$ 9,00</p>
           <p class="nomeproduto">Ketchup HEINZ 512g</p>
         </div>
@@ -49,7 +34,7 @@
         <button class="_button _button-4" type="submit">Finalizar</button>
         <button class="_button _button-5" type="submit">Limpar</button>
       </div>
-    </div>
+    </form>
   </div>
 </body>
 </html>
