@@ -1,55 +1,64 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>carrinho</title>
+{% extends "header---footer.html" %}
+
+{% block title %}Carrinho{% endblock %}
+
+{% load staticfiles %}
+
+{% block head %}
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,400,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/carrinho-grid.css">
-  <link rel="stylesheet" href="css/carrinho.css">
-</head>
-<body class="body page-carrinho clearfix">
-  <div class="background">
+  <link rel="stylesheet" href="{% static 'css/standardize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/carrinho-grid.css' %}">
+  <link rel="stylesheet" href="{% static 'css/carrinho.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="background" style="height: {{ altura1 }}px;">
     <div class="carrinho clearfix">
       <p class="titulocarrinho">Seu carrinho</p>
+
+      {% for produto in carrinho.produtos %}
+        <div class="produtocarrinho">
+          <div class="infocarrinho">
+            <div class="alteraquantidade">
+              <button onClick="alteraquantidade('-')" class="_button _button-1" id="-">-</button>
+              <button onClick="alteraquantidade('+')" class="_button _button-2" id="+">+</button>
+              <p class="quantidade" id="quantidade">1</p>
+            </div>
+            <script>
+                var quant = document.getElementById("quantidade");
+                var quantVal = Number(quant.innerHTML);
+                var bmenos = document.getElementById("-");
+                var bmais = document.getElementById("+");
+                function alteraquantidade(op) {
+                  if (op == "-"){
+                    quantVal -= 1;
+                    quant.innerHTML = quantVal;
+                  }
+                  if (op == "+"){                  quantVal += 1;
+                    quant.innerHTML = quantVal;
+                  }
+                }
+              </script>
+            <p class="precoproduto">R$ {{ produto.preco }}</p>
+            <p class="nomeproduto">{{ produto.nome }}</p>
+          </div>
+          <button class="_button _button-3">Remover</button>
+          <div class="fotoprodutocarrinho" style="background-image: url('{{ produto.imagem }}');"></div>
+        </div>
+      {% endfor %}
+
       <div class="campototalcarrinho">
-        <p class="valortotalcarrinho">R$ 37,90</p>
+        <p class="valortotalcarrinho">{{ total }}</p>
         <p class="totalcarrinho">Total</p>
       </div>
-      <div class="produtocarrinho">
-        <div class="infocarrinho">
-          <div class="alteraquantidade">
-            <button onClick="alteraquantidade('-')" class="_button _button-1" id="-">-</button>
-            <button onClick="alteraquantidade('+')" class="_button _button-2" id="+">+</button>
-            <p class="quantidade" id="quantidade">1</p>
-          </div>
-          <script>              
-              var quant = document.getElementById("quantidade");
-              var quantVal = Number(quant.innerHTML);
-              var bmenos = document.getElementById("-");
-              var bmais = document.getElementById("+");
-              function alteraquantidade(op) {
-                if (op == "-"){
-                  quantVal -= 1;
-                  quant.innerHTML = quantVal;
-                }
-                if (op == "+"){                  quantVal += 1;
-                  quant.innerHTML = quantVal;
-                }
-              }
-            </script>
-          <p class="precoproduto">R$ 9,00</p>
-          <p class="nomeproduto">Ketchup HEINZ 512g</p>
-        </div>
-        <button class="_button _button-3">Remover</button>
-        <div class="fotoprodutocarrinho"></div>
-      </div>
+
       <div class="containerbotoescarrinho">
-        <button class="_button _button-4" type="submit">Finalizar</button>
-        <button class="_button _button-5" type="submit">Limpar</button>
+        <button onClick="window.location='{{ request.session.urlFila }}';" class="_button _button-4" type="button">Finalizar</button>
+        <form method="post" action="{% url 'Limpar' %}">
+          {% csrf_token %}
+          <button class="_button _button-5" type="submit">Limpar</button>
+        </form>
       </div>
     </div>
   </div>
-</body>
-</html>
+{% endblock %}
