@@ -11,8 +11,10 @@
 </head>
 <body class="body page-checklist-caixa clearfix">
   <div class="element _container element-1">
-    <div class="element _container element-2 clearfix">
+    <div id="lista" class="element _container element-2 clearfix">
       <p class="text text-1">Terminal de pagamento</p>
+
+<!-- Exemplo
       <div class="container _container container-1">
         <button onClick="window.location='interface-de-pagamento.html';" class="_button" type="submit">Confere</button>
         <div class="container _container container-2">
@@ -30,8 +32,97 @@
           </div>
         </div>
         <div class="element _element"></div>
+-->
+
       </div>
     </div>
   </div>
 </body>
 </html>
+
+<script src="../js/jquery-min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  
+  $("#lista").append(`
+      <div class="container _container container-1">
+        <button onClick="window.location='interface-de-pagamento.html';" class="_button" type="submit">Confere</button>
+        <div class="container _container container-2">
+          <div class="container _container container-3">
+            <p class="camponomeprop text text-2">Quantidade</p>
+            <p class="text text-3">` + "2" + `</p>
+          </div>
+          <div class="container _container container-4">
+            <p class="camponomeprop text text-4">Código de barras</p>
+            <p class="text text-5">` + "6221033101517" + `</p>
+          </div>
+          <div class="container _container container-5">
+            <p class="camponomeprop text text-6">Produto</p>
+            <p class="text text-7">` + "Ketchup HEINZ 512g" + `</p>
+          </div>
+        </div>
+        <div class="element _element"></div>
+    `)
+})
+
+function getProdutos(){
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://143.107.102.52:8000/carrinho/utils/Produtos/?idUsuario=1",
+    "method": "GET",
+    "headers": {
+      "cache-control": "no-cache",
+    }
+  }
+
+  produtos = {};
+  $.ajax(settings).done(function (response){
+    console.log(response);
+    try
+    {
+      response.forEach(function(produto){
+        console.log(produto.idProduto);
+        console.log(produto.nome);
+        console.log(produto.categoria);
+        console.log(produto.marca);
+        console.log(produto.preco);
+        console.log(produto.imagem);
+        console.log(produto.quantidade);
+        console.log("--");
+
+        $("#lista").append(`
+      <div class="container _container container-1">
+        <button onClick="window.location='interface-de-pagamento.html';" class="_button" type="submit">Confere</button>
+        <div class="container _container container-2">
+          <div class="container _container container-3">
+            <p class="camponomeprop text text-2">Quantidade</p>
+            <p class="text text-3">` + produto.quantidade + `</p>
+          </div>
+          <div class="container _container container-4">
+            <p class="camponomeprop text text-4">Código de barras</p>
+            <p class="text text-5">` + produto.idProduto + `</p>
+          </div>
+          <div class="container _container container-5">
+            <p class="camponomeprop text text-6">Produto</p>
+            <p class="text text-7">` + produto.nome + `</p>
+          </div>
+        </div>
+        <div class="element _element"></div>
+    `)
+      })
+    }
+    catch(err)
+    {
+      console.log("erro...")
+    }
+  });
+
+  return valor;
+}
+
+</script>
+
+
+

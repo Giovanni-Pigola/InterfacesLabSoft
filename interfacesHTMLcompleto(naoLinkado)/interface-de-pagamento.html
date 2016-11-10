@@ -22,15 +22,16 @@
               <p>Valor&nbsp;</p>
               <p>Total</p>
 </div>
-            <p class="text text-4">R$ 9,00</p>
+            <p id="valorTotal" class="text text-4"></p>
           </div>
           <div class="container container-4">
             <p class="camponomeprop text text-5">Valor em dinheiro</p>
-            <p class="text text-6">R$10,00</p>
+            <!-- <p class="text text-6">R$10,00</p> -->
+            <input id="valorInput" class="text text-6"/>
           </div>
           <div class="container container-5">
             <p class="camponomeprop text text-7">Troco</p>
-            <p class="text text-8">R$1,00</p>
+            <p id="troco" class="text text-8"></p>
           </div>
         </div>
       </div>
@@ -52,3 +53,57 @@
   </div>
 </body>
 </html>
+
+<script src="../js/jquery-min.js"></script>
+<script type="text/javascript">
+
+var itemKey;
+var id;
+
+$(document).ready(function(){
+  getValorTotal(getIdUsuario());
+})
+
+function getIdUsuario(){
+  var refe = firebase.database().ref('caixas/');
+  refe.child('caixa_1').get();
+}
+
+function getValorTotal (idUser = 5)
+{
+  var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://scan-skip-carrinho.herokuapp.com/id="+idUser+"/",
+  "method": "GET"
+}
+
+  valor = 0;
+  
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+    try
+    {
+      valor = response.total;
+      console.log(valor);
+      $("#valorTotal").text(valor);
+    }
+    catch(err)
+    {
+      valor = "NA";
+    }
+  });
+}
+
+  $("#valorInput").change(function(){
+    valorTotal = $("#valorTotal").text()
+    valorTotal = valorTotal.match(/\d+\,\d+/)[0].replace(",",".");
+    valorPago = $("#valorInput").val().replace(",",".");;
+    troco = valorPago - valorTotal;
+    console.log(valorTotal);
+    console.log(valorPago);
+    console.log(troco);
+    $("#troco").text(("R$ " + troco).replace(".",","));
+  })
+
+</script>
