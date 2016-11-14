@@ -5,9 +5,13 @@ body {
 }
 
 .background {
+  position: relative;
   float: left;
+  clear: both;
+  z-index: 9;
   width: 100%;
   height: 712px;
+  margin-top: -712px;
   border: 1px double rgb(0, 0, 0);
   background: url('../images/Pague%20leve.png') rgb(255, 255, 255);
   background-size: cover;
@@ -26,8 +30,70 @@ body {
 .container {
   position: relative;
   float: left;
+  z-index: 0;
   width: 100%;
   height: 712px;
+}
+
+.cpf,
+.email {
+  display: block;
+  float: left;
+  clear: both;
+  width: 80.0177444794%;
+  height: 33px;
+  margin: 28px 0 0 9.93197%;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font: italic 0.375em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.nome {
+  display: block;
+  float: left;
+  clear: both;
+  width: 80.0177444794%;
+  height: 33px;
+  margin-left: 9.93197%;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font: italic 0.375em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.senha1 {
+  display: block;
+  float: left;
+  clear: both;
+  width: 80.0177444794%;
+  height: 33px;
+  margin: 28px 0 0 9.93571%;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font: italic 0.375em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.senha2 {
+  display: block;
+  float: left;
+  clear: both;
+  width: 80.0177444794%;
+  height: 33px;
+  margin: 28px 0 0 9.8759%;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font: italic 0.375em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
 }
 
 .text {
@@ -56,61 +122,41 @@ body {
   background-color: rgb(16, 161, 36);
 }
 
-._input {
-  display: block;
-  float: left;
-  clear: both;
-  width: 80.0177444794%;
-  height: 33px;
-  padding: 0 10px;
-  border: 1px solid rgba(0, 0, 0, 0.54);
-  border-radius: 5px;
-  background-color: rgb(255, 255, 255);
-  font: italic 0.375em/1.38 Helvetica;
-  color: rgb(0, 0, 0);
-}
-
-.cadastro ._input-1 {
-  margin-left: 9.93197%;
-}
-
-.cadastro ._input-2,
-.cadastro ._input-3,
-.cadastro ._input-4 {
-  margin: 28px 0 0 9.93197%;
-}
-
-.cadastro ._input-5 {
-  margin: 28px 0 0 9.93571%;
-}
-
-.cadastro ._input-6 {
-  margin: 28px 0 0 9.8759%;
-}
-
 @media(max-width: 900px) {
+  .background {
+    position: relative;
+    clear: none;
+    z-index: 9;
+    margin-top: 0;
+  }
+
   .background .cadastro {
     width: 65.1447661469%;
     min-width: 400px;
   }
 
-  .cadastro ._button {
-    margin-top: 338px;
-  }
-
-  .cadastro ._input-1,
-  .cadastro ._input-2,
-  .cadastro ._input-3,
-  .cadastro ._input-4 {
+  .cadastro .cpf,
+  .cadastro .email,
+  .cadastro .nome {
     margin-left: 9.93056%;
   }
 
-  .cadastro ._input-5 {
+  .cadastro .senha1 {
     margin-left: 9.9359%;
   }
 
-  .cadastro ._input-6 {
+  .cadastro .senha2 {
     margin-left: 9.87714%;
+  }
+
+  .container {
+    position: relative;
+    z-index: 0;
+    margin-top: -712px;
+  }
+
+  .cadastro ._button {
+    margin-top: 338px;
   }
 }
 
@@ -119,47 +165,62 @@ body {
     font-size: 2em;
   }
 
+  .background {
+    position: relative;
+    z-index: 9;
+  }
+
   .background .cadastro {
     width: 65.2173913043%;
     min-width: 300px;
   }
 
+  .cadastro .cpf,
+  .cadastro .email,
+  .cadastro .nome,
+  .cadastro .senha1 {
+    margin-left: 9.92388%;
+  }
+
+  .cadastro .senha2 {
+    margin-left: 9.86779%;
+  }
+
   .container {
+    position: relative;
+    z-index: 0;
     height: 711px;
   }
 
   .cadastro ._button {
     margin-top: 378px;
   }
-
-  .cadastro ._input-1,
-  .cadastro ._input-2,
-  .cadastro ._input-3,
-  .cadastro ._input-4,
-  .cadastro ._input-5 {
-    margin-left: 9.92388%;
-  }
-
-  .cadastro ._input-6 {
-    margin-left: 9.86779%;
-  }
 }
 
 @media(max-width: 360px) {
+  .background {
+    position: relative;
+    z-index: 9;
+  }
+
   .background .cadastro {
     width: 85%;
     min-width: 200px;
   }
 
-  .cadastro ._input-1,
-  .cadastro ._input-2,
-  .cadastro ._input-3,
-  .cadastro ._input-4,
-  .cadastro ._input-5 {
+  .cadastro .cpf,
+  .cadastro .email,
+  .cadastro .nome,
+  .cadastro .senha1 {
     margin-left: 9.9152799999%;
   }
 
-  .cadastro ._input-6 {
+  .cadastro .senha2 {
     margin-left: 9.86393%;
+  }
+
+  .container {
+    position: relative;
+    z-index: 0;
   }
 }
