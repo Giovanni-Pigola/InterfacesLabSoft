@@ -31,9 +31,9 @@ body {
 }
 
 .text {
-  float: left;
   width: 100%;
   min-height: 50px;
+  margin: 0 auto;
   font-size: 1em;
   text-align: center;
   color: rgba(0, 0, 0, 0.87);
@@ -41,11 +41,10 @@ body {
 
 ._button {
   display: block;
-  float: left;
-  clear: both;
   width: 28.7066246056%;
+  min-width: 124px;
   height: 52px;
-  margin: 40px 0 0 35.64033%;
+  margin: 378px auto 0;
   border-radius: 5px;
   background-color: rgb(67, 212, 87);
   font: italic 700 0.75em/1.38 Helvetica;
@@ -96,8 +95,7 @@ body {
   }
 
   .cadastro ._button {
-    margin-left: 35.64904%;
-    font-size: 0.625em;
+    margin-top: 338px;
   }
 
   .cadastro ._input-1,
@@ -131,8 +129,7 @@ body {
   }
 
   .cadastro ._button {
-    margin-left: 35.64503%;
-    font-size: 0.563em;
+    margin-top: 378px;
   }
 
   .cadastro ._input-1,
@@ -152,11 +149,6 @@ body {
   .background .cadastro {
     width: 85%;
     min-width: 200px;
-  }
-
-  .cadastro ._button {
-    margin-left: 35.63543%;
-    font-size: 0.5em;
   }
 
   .cadastro ._input-1,
