@@ -13,7 +13,76 @@
   <div class="element"></div>
   <div class="container clearfix">
     <button class="_button _button-1">Pagar na fila</button>
-    <button class="_button _button-2">Pagar no aplicativo</button>
+    <!--<button class="_button _button-2">Pagar no aplicativo</button> -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <fieldset>
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="tiagoguy@hotmail.com" />
+            <input type="hidden" name="lc" value="BR" />
+            <input type="hidden" name="item_name" value="Payment" />
+            <input type="hidden" name="item_number" value="P1" />
+            <input type="hidden" name="currency_code" value="BRL" />
+            <input type="hidden" name="button_subtype" value="services" />
+            <input type="hidden" name="no_note" value="0" />
+            <input type="hidden" name="cn" value="Comments" />
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="rm" value="1" />
+            <input type="hidden" name="return" value="http://www.ekerner.com/payments/?payment=success" />
+            <input type="hidden" name="cancel_return" value="http://www.ekerner.com/payments/?payment=cancelled" />
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHostedGuest" />
+            <table>
+                    <tr><td style="padding:0 5px 5px 0;">TOTAL:</td><td style="padding:0 5px 5px 0;"><input id="valorTotal" type="text" name="amount" maxlength="200" style="color:#999999;" /></td></tr>
+                    <tr><td>&nbsp;</td><td style="padding:0 5px 5px 0;">
+                            <input style="position:relative; left:-10px; background:#ffffff; border:0;" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_paynowCC_LG.gif" name="submit" alt="PayPal . The safer, easier way to pay online." />
+                            <img alt="" style="border:0;" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+                    </td></tr>
+            </table>
+        </fieldset>
+    </form>
   </div>
 </body>
 </html>
+
+<script src="js/jquery-min.js"></script>
+<script type="text/javascript">
+
+  var itemKey;
+  var id;
+
+  $(document).ready(function(){
+    getValorTotal(getIdUsuario());
+  })
+
+  function getIdUsuario(){
+    // var refe = firebase.database().ref('caixas/');
+    // refe.child('caixa_1').get();
+  }
+
+  function getValorTotal (idUser = 5)
+  {
+    var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://scan-skip-carrinho.herokuapp.com/id="+idUser+"/",
+    "method": "GET"
+  }
+
+    valor = 0;
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+      try
+      {
+        valor = response.total;
+        console.log(valor);
+        //$("#valorTotal").val(valor);
+        $("#valorTotal").val(valor.match(/\d+\,\d+/)[0].replace(",","."));
+      }
+      catch(err)
+      {
+        valor = "NA";
+      }
+    });
+  }
+
+</script>
