@@ -1,0 +1,227 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 600 1em/2.5 'Open Sans';
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.alterar_dados {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 5px;
+  background-color: rgb(62, 113, 255);
+  line-height: 1.38;
+}
+
+.alterar_senha {
+  top: 0;
+  right: 0;
+  background-color: #3e71ff;
+  line-height: 2;
+}
+
+.background {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 800px;
+  background: url('../images/Pague%20leve.png') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+}
+
+.buttonperfil {
+  display: block;
+  position: absolute;
+  width: 49%;
+  height: 54px;
+  border-radius: 3px;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.buttonperfil:hover {
+  color: rgb(240, 205, 101);
+}
+
+.carrinho {
+  top: 70px;
+  right: 0;
+  z-index: 3;
+  padding: 5px;
+  background-color: rgb(62, 113, 255);
+  line-height: 1.38;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.cpf {
+  top: 47px;
+  z-index: 6;
+  width: 99.7429305912%;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.email {
+  top: 94px;
+  z-index: 5;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.image {
+  display: block;
+  float: left;
+  width: 170px;
+  height: auto;
+  overflow: hidden;
+}
+
+.mapa {
+  top: 70px;
+  left: 0;
+  z-index: 2;
+  padding: 5px;
+  background-color: rgb(62, 113, 255);
+  line-height: 1.38;
+}
+
+.nome {
+  top: 0;
+  z-index: 7;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.params {
+  position: absolute;
+  top: 315px;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  width: 75.8253461128%;
+  height: 128px;
+  margin: 0 auto;
+}
+
+.perfil {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  width: 78.25%;
+  height: 678px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(113, 164, 255, 0.2);
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+._text {
+  top: 28px;
+  z-index: 9;
+  width: 100%;
+  min-height: 63px;
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+}
+
+.container-1 {
+  top: 109px;
+  z-index: 11;
+  width: 170px;
+  height: 170px;
+}
+
+.container-2 {
+  top: 460px;
+  z-index: 4;
+  width: 76.0383386581%;
+  height: 124px;
+}
+
+@media(max-width: 650px) {
+  .container .alterar_senha {
+    line-height: 1.38;
+  }
+
+  .container .buttonperfil {
+    width: 47.5%;
+  }
+
+  .container .image {
+    height: auto;
+  }
+
+  .background .perfil,
+  .params .text,
+  .perfil ._text,
+  .perfil .params {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .perfil .container {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .perfil .container-2 {
+    width: 75.1044482673%;
+    height: 123px;
+  }
+}
+
+@media(max-width: 360px) {
+  body {
+    font-size: 1em;
+  }
+
+  .container .image {
+    height: auto;
+  }
+
+  .background .perfil,
+  .params .text,
+  .perfil ._text,
+  .perfil .container,
+  .perfil .params {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
